@@ -1,0 +1,10 @@
+.part{
+	padding-right: 0;
+	padding-left: 0;
+}
+.part-1{
+	border: dotted;
+}
+.card{
+	height: 240px
+}
