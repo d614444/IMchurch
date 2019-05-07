@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<script type = "text/javascript" src ="{% static "script/jQuery3.3.1.js" %}"></script>
+	<script type = "text/javascript" src ="{% static "script/bootstrap.js" %}"></script>
+	<link href="{% static 'script/bootstrap.css' %}" rel="stylesheet">
+	<link href="{% static 'css/church.css' %}" rel="stylesheet">
+	<title></title>
+	
+</head>
+<body class='text-center'> 
+	<form class="form-signin">
+		<img class='mb-4 my-4' src="{% static "images/LOGO_2.png" %}" alt width="72" height="72" style="background-color: black">
+		<h1 class="h3 mb-3 font-weight-normal">歡迎來看劇請先登入</h1>
+		<label for="inputEmail" class='sr-only'>Email address</label>
+		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+		<label for="inputPassword" class='sr-only'>Password</label>
+		<input type="password" id="inputPassword" class="form-control" placeholder="password" required >
+
+		<div class="custom-checkbox mb-3">
+			<label>
+				<input type="checkbox"  value="remember-me">
+				記住我
+			</label>
+		</div>
+		<div>
+			<button class="btn btn-md btn-outline-dark" type="submit">登入</button>
+			<button class="btn btn-md btn-outline-dark" type="button" onclick="location.href='/registered/'">註冊</button>
+		</div>
+
+	</form>
+		<div>
+                <a href="{% url 'social:begin' 'facebook' %}"><img src="{% static "images/facebook.png" %}"alt width="40" height="40"></a>
+                <img src= "{% static "images/google-plus.png" %}"alt width="40" height="40">
+        </div>    	   
+</body>
+</html>

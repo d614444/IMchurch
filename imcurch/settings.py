@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'king',
     'rest_framework',
+    'social_django'
 ]
 
 MIDDLEWARE = [
@@ -105,6 +106,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -127,3 +135,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
 os.path.join(BASE_DIR, 'static'),
 ]
+
+SOCIAL_AUTH_FACEBOOK_KEY = '295589044689432' # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '57f814bb299b0d534ddb50d9d0fdde7e' # Facebook App Secret
