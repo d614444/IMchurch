@@ -17,7 +17,7 @@ class CustomUserAdmin(UserAdmin):
 	list_display = (
 		'username', 'get_name', 'get_address',
 		'email',  'get_birth', 'get_tel', 
-		'get_age','get_christian', 'get_immember'
+		'get_christian', 'get_immember'
 		)
 	list_select_related = ('profile', )
 
@@ -28,20 +28,20 @@ class CustomUserAdmin(UserAdmin):
 	def get_address(self, instance):
 		return instance.profile.address
 	get_address.short_description = '地址'	
-
+	
 	def get_tel(self, instance):
-		return instance.profile.tel
+		return instance.profile.phone_number
 	get_tel.short_description = '電話'	
 
 	def get_name(self, instance):
 		return 	instance.last_name + instance.first_name	
 	get_name.short_description = '姓名'
-
+	
 	def get_age(self, instance):
 		age = int((datetime.date.today() - instance.profile.birth).days / 365.25 )
 		return age
 	get_age.short_description = '年齡'
-
+	
 	def get_christian(self, instance):
 		return instance.profile.christian
 	get_christian.short_description = '是否受洗'
