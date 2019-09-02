@@ -1,77 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>I'm King</title>
 	<meta charset="utf-8">
 	{% load staticfiles %}
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	<script type = "text/javascript" src ="{% static "script/jQuery3.3.1.js" %}"></script>
 	<script type = "text/javascript" src ="{% static "script/bootstrap.js" %}"></script>
+	<script type = "text/javascript" src ="{% static "script/navbar.js" %}"></script>
+	<script type = "text/javascript" src ="{% static "script/navbarselect.js" %}"></script>
+	<script type = "text/javascript" src ="{% static "script/navbarsmooth.js" %}"></script>
 	<link href="{% static 'script/bootstrap.css' %}" rel="stylesheet">
 	<link href="{% static 'css/church.css' %}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
 	<title></title>
 </head>
 <body>
-	<header id="header" class=" d-flex sticky-top align-items-center flex-md-row flex-column bg-white p-3 px-md-4 menu-bar">
-		<h5 class="my-0 mr-md-auto font-weight-normal">I'M King</h5>
-		<nav class='my-2 my-md-0 mr-md-3'>
-			<a class='p-2 text-dark' href='#'>我要報名</a>
-		</nav>
-		<a class='btn btn-outline-dark' href='/login/'>登入</a>	
+	<style>
+		@media screen and (max-width: 650px){
+		#navbar a{
+		font-size: 85%;
+		}
+		h1{
+			font-size:1.5rem;
+		}
+		.lead{
+			font-size:0.8rem;
+		}
+		.card-body a:hover {
+			color:whitesmoke;
+		}
+		.QA-text{
+			font-size:1rem;
+		}
+		.QA-body{
+			font-size:0.5rem;
+		}
+}
+
+	</style>
+	<nav id="navbar" class="navbar navbar-expand fixed-top  navbar-light ">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav" id="find-tag">
+      			<li id='test' class="nav-item  ">
+        			<a class="nav-link active" href="#section-1">問候語 </a>
+      			</li>
+				<li class="nav-item active">
+        			<a class="nav-link " href="#section-2">背景介紹</a>
+      			</li>
+				<li class="nav-item active">
+        			<a class="nav-link " href="#section-3">我要購票<span class="sr-only">(current)</span></a>
+      			</li>
+				<li class="nav-item active">
+        			<a class="nav-link " href="#section-4">宴會規則<span class="sr-only">(current)</span></a>
+      			</li>
+				<li class="nav-item active">
+        			<a class="nav-link " href="#section-5">宴會Q&A<span class="sr-only">(current)</span></a>
+      			</li>                
+			</ul>	  
+	  	</div>
+	</nav>
+	<header id="header" class=" d-flex  align-items-center flex-md-row flex-column bg-white menu-bar">
+		<img src="{% static "images/first.png" %}" class="header-img img-fluid " alt="Responsive image">
 	</header><!-- /header -->
-	<section class="container-fluid part my-2">
+	<div id="showbar"></div>
+	<section id='section-1'  class="container part mt-4 nav-part">
 		<div class='part-1 text-center' >
-			<h1 class="display-4">我要打標題</h1>
-			<p class="lead">幫我加點內容吧</p>
+			<h1>問候語</h1>
+			<hr class ="my-5">
+			<div class = 'mt-5'>
+				<span class="lead">「你好，我是大衛，我想邀請你參加一場皇室宴會，
+				在這場盛宴裡，你會經歷一段愛與慾竄流的奇妙旅程，你將有機會潛入我慾望的最深處，同時，你會觸摸到你心中，那個最幽黑的渴望，只有誠實面對自己選擇的人，才有機會，觸摸到那位，
+				</span>
+				<p class="lead">最獨一無二的-----KING！ 」</p>
+			</div>	
+		</div>
+		<div class = "text-center">	
+			<p class = "lead mt-5"><strong>「喔！對了，提醒您，這場宴會18禁...」</strong></p>
 		</div>
 	</section>
-	<section class="container">
-		<div class="card-deck text-center">
-			<div class="card mb-4">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">方案一</h4>
-				</div>
-				<div class="card-body">
-					pic
-					pic
-				</div>	
+	<section class="container-fluid m-0 p-0" >
+		<img src="{% static "images/second.png" %}" class=" img-fluid " alt="Responsive image">
+	</section>
+	<section id="section-2" class="container part nav-part">
+		<div class='part-1 text-center my-5' >
+			<h1 class='my-5' >背景介紹</h1>
+			<hr class='my-5'>
+			<div class = "my-3">
+				<span class="lead ">
+					根據聖經大衛王與拔示巴的故事所改編。
+				</span>
 			</div>
+			<div>
+				<p class= "lead my-3">大衛英勇善戰、才智多謀，在他作王的期間，無意間發現了一名貌美動人的女人-拔示巴，拔示巴是烏利亞的妻子，烏利亞是大衛手下的悍將，大衛仍不顧一切地將拔示巴佔為己有，並使其懷孕。</p>
+			</div>
+			<div class="mb-5">
+				<p class= "lead my-3">大衛想將拔示巴肚裡的孩子，變成是烏利亞的，卻始終沒能成功，因此大衛決定不擇手段，掩飾所有的一切...。</p>
+			</div>
+		</div>
+	</section>
+	<section class="container nav-part" id="section-3">
+		<div class='part text-center my-5' >
+			<h1 class='my-5' >我要購票</h1>
+			<hr class='my-5'>
+		</div>	
+			<div class="card-deck text-center card-area">
+				<div class="card mb-4">
+					<div class="card-header  d-flex">
+						<h4 class="my-0 font-weight-normal card-title flex-fill">12/20</h4>
+						<h4 class="my-0 font-weight-normal card-title flex-fill">Friday</h4>
+					</div>
+					<div class="card-body ">
+						<div class='d-flex '>
+							<div class='flex-column flex-fill '>時間</div>
+							<div class='flex-column flex-fill'>剩餘張數</div>
+							<div class='flex-column flex-fill'></div>
+						</div>
+						<div class='d-flex '>
+							<div class='flex-column flex-fill'>19:30</div>
+							<div class='flex-column flex-fill'>80</div>
+							<div class='flex-column flex-fill'>
+						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
+						</div>
+					</div>
+						
+				</div>
 			<div class="card mb-4">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">方案二</h4>
+				<div class="card-header  d-flex">
+					<h4 class="my-0 font-weight-normal flex-fill">12/21</h4>
+					<h4 class="my-0 font-weight-normal flex-fill">Saturday</h4>
 				</div>
 				<div class="card-body">
-					pic
-					pic
+					<div class='d-flex '>
+						<div class='flex-column flex-fill '>時間</div>
+						<div class='flex-column flex-fill'>剩餘張數</div>
+						<div class='flex-column flex-fill'></div>
+					</div>
+					<div class='d-flex '>
+						<div class='flex-column flex-fill'>14:00</div>
+						<div class='flex-column flex-fill'>80</div>
+						<div class='flex-column flex-fill'>
+						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
+					</div>
+					<div class='d-flex '>
+						<div class='flex-column flex-fill'>19:00</div>
+						<div class='flex-column flex-fill'>80</div>
+						<div class='flex-column flex-fill'>
+						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
+					</div>
 				</div>
 			</div>		
 			<div class="card mb-4">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">方案三</h4>
+				<div class="card-header d-flex">
+					<h4 class="my-0 font-weight-normal flex-fill">12/22</h4>
+					<h4 class="my-0 font-weight-normal flex-fill">Sunday</h4>
 				</div>
 				<div class="card-body">
-					pic
-					pic
+					<div class='d-flex '>
+						<div class='flex-column flex-fill '>時間</div>
+						<div class='flex-column flex-fill'>剩餘張數</div>
+						<div class='flex-column flex-fill'></div>
+					</div>
+					<div class='d-flex '>
+						<div class='flex-column flex-fill'>10:00</div>
+						<div class='flex-column flex-fill'>80</div>
+						<div class='flex-column flex-fill'>
+						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
+					</div>
+					<div class='d-flex '>
+						<div class='flex-column flex-fill'>14:00</div>
+						<div class='flex-column flex-fill'>80</div>
+						<div class='flex-column flex-fill'>
+						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid part my-2">
-		<div class='part-1 text-center' >
-			<h1 class="display-4">我要打標題</h1>
-			<p class="lead">幫我加點內容吧</p>
+	<section class="container part nav-part" id="section-4">
+		<div class='part-1 lead' >
+			<h1 class=" text-center">宴會規則</h1>
+			<hr class='my-5'>
+			<ul class='list-group unstyled'>
+				<li class="list-group-item rule"> 宴會採預購模式，同一時段最多容納80位賓客，不接受當場退換票。</li>
+				<li class="list-group-item rule"> 宴會採分批入場，遲到將無法參加宴會，亦不予退費，請您於宴會時間前15分鐘抵達！</li>
+				<li class="list-group-item rule"> 為了宴會品質，我們提供寄物服務，請您攜帶精簡的行囊與一顆期待的心。</li>
+				<li class="list-group-item rule"> 宴會中，您需要全程攜帶面具，建議您戴隱形眼鏡！</li>
+				<li class="list-group-item rule"> 宴會中提供少量威士忌，參與者須年滿18歲！因生理因素不方便飲酒者，請酌量。</li>
+				<li class="list-group-item rule"> 由於提供酒品，顧及安全與宴會品質，請搭乘大眾運輸工具。</li>
+				<li class="list-group-item rule"> 請勿觸摸皇室宴會裡的任何演員，除非演員主動向你伸手。</li>
+				<li class="list-group-item rule"> 在探索KING的故事時，請勿說話與討論。</li>
+				<li class="list-group-item rule"> 全程請勿使用手機、請勿拍照、請勿錄影。</li>
+				<li class="list-group-item rule"> 在宴會各個角落裡，都在發生故事，你可以跟隨任何一個你喜歡的角色，去探索一段屬於你自己的故事。
+				</li>
+			</ul>
 		</div>
 	</section>
-	<section class="container-fluid part my-2">
-		<div class='part-1 text-center' >
-			<h1 class="display-4">我要打標題</h1>
-			<p class="lead">幫我加點內容吧</p>
+	<section class="container part nav-part" id="section-5">
+		<div class='part-1 ' >
+			<h1 class='text-center'>Q&A</h1>
+			<hr class='my-5'>
+			<div class="accordion" id="accordionExample">
+  				<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    				<div class="card-header" id="headingOne">
+      					<h2 class="mb-0">
+        					<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          					1. 請問《King》是怎樣的一齣戲？
+        					</button>
+      					</h2>
+    				</div>
+    				<div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      					<div class="card-body QA-body">
+        					《King》是以沈浸式劇場的方式讓觀眾體驗主觀的劇情。這是一齣關於大衛王與拔示巴的感情糾葛故事，讓觀眾用自己的角度去拼湊屬於觀賞者自己的劇情。
+							每個人都有屬於自己的結局。
+							劇情涉及成人議題，18歲以下不得參加
+							現場提供酒精飲料，帶著微微的醉意去看戲，看得更入戲。
+      					</div>
+    				</div>
+  				</div>
+				<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    				<div class="card-header" id="headingOne">
+      					<h2 class="mb-0">
+        					<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+          					2. 一個場次有多少參與者一起進行？
+        					</button>
+      					</h2>
+    				</div>
+    				<div id="collapsetwo" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      					<div class="card-body QA-body">
+        				一場將有80位觀眾，會一起在現場不同的角落進行探索。
+      					</div>
+    				</div>
+					<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    					<div class="card-header" id="headingOne">
+      						<h2 class="mb-0">
+        						<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+          						3. 戲總長時間？
+        						</button>
+      						</h2>
+    					</div>
+    					<div id="collapsethree" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      						<div class="card-body QA-body">
+        					戲總長約90分鐘，無中場休息。
+      						</div>
+    					</div>
+  					</div>
+					<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    					<div class="card-header" id="headingOne">
+      						<h2 class="mb-0">
+        						<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+          						4. 入場時間？
+        						</button>
+      						</h2>
+    					</div>
+    					<div id="collapsefour" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      						<div class="card-body QA-body">
+        					開演前30分鐘即開放陸續進場
+							為了觀戲品質，不開放遲到觀眾進場，遲到將無法入場，並不予以退票，請於開演前提早15-30分鐘入場。為了自身的權益，請務必準時入場。
+      						</div>
+    					</div>
+  					</div>
+					<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    					<div class="card-header" id="headingOne">
+      						<h2 class="mb-0">
+        						<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+          						5. 不喝酒的人可參加嗎？
+        						</button>
+      						</h2>
+    					</div>
+    					<div id="collapsefive" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      						<div class="card-body QA-body">
+        					不喝酒也可以參加，但是現場沒有提供非酒精飲料。
+      						</div>
+    					</div>
+  					</div>
+					<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    					<div class="card-header" id="headingOne">
+      						<h2 class="mb-0">
+        						<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+          						6. 建議穿著？
+        						</button>
+      						</h2>
+    					</div>
+    					<div id="collapsesix" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      						<div class="card-body QA-body">
+        					觀戲途中會跟著演員穿梭，建議穿著好走好站的鞋子。
+      						</div>
+    					</div>
+  					</div>
+					<div class="card" style="border:none;margin-bottom:0px;height:auto">
+    					<div class="card-header" id="headingOne">
+      						<h2 class="mb-0">
+        						<button class="btn QA-text" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+          						7. 我東西大包小包的怎麼辦？
+        						</button>
+      						</h2>
+    					</div>
+    					<div id="collapseseven" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      						<div class="card-body QA-body">
+        					現場會有寄物櫃，所有觀眾需先寄物後入場。
+      						</div>
+    					</div>
+  					</div>                  
+			</div>	  
 		</div>
 	</section>
-	<section class="container-fluid part my-2">
-		<div class='part-1 text-center' >
-			<h1 class="display-4">我要打標題</h1>
-			<p class="lead">幫我加點內容吧</p>
-		</div>
+	<section id='sectionlast' class="container-fluid part">
+		<img src="{% static "images/last.png" %}" class=" img-fluid " alt="Responsive image">
 	</section>
 
 </body>

@@ -1,12 +1,38 @@
+
+
+
+body{
+	background-color: rgb(84,0,13);
+	font-family: 'Noto Serif TC', serif;
+}
+hr{
+	border-top: 1px solid
+}
+
+.header-img{
+  width: 100%;
+
+}
 .part{
 	padding-right: 0;
 	padding-left: 0;
+	background-color: rgb(84,0,13);
+	color: rgb(81, 139, 139);
+	text-shadow: 10px 3px 1px #0303037a;
 }
 .part-1{
-	border: dotted;
+	
 }
 .card{
-	height: 240px
+	height: auto;
+	border:1px solid;
+	color: rgb(81, 139, 139);
+	background-color: rgb(84,0,13);
+}
+.rule{
+	background-color: rgb(84,0,13);
+	border: none;
+	
 }
 .form-signin{
 	width: 100%;
@@ -19,3 +45,63 @@
 	border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+#navbar{
+	height: 9%;
+	background-color: rgb(84,0,13);
+}
+#navbar a{
+	font-size: 120%;
+	color: rgba(0,0,0,0.5);
+	text-shadow:1px 1px 1px  #e6d7d77a;
+}
+#navbar a:hover, #navbar a.active {
+	color:whitesmoke;
+}
+#section-3{
+	margin-top: 12rem
+}
+#section-4{
+	margin-top: 12rem
+}
+#section-5{
+	margin-top: 12rem
+}
+.card-header{
+	border: none;
+	background-color: rgb(84,0,13);
+	color: rgb(81, 139, 139);
+	text-shadow: 10px 3px 1px #0303037a;
+}
+.card-body{
+	background-color: rgb(84,0,13);
+	color: rgb(81, 139, 139);
+	text-shadow: 10px 3px 1px #0303037a;
+}
+.card-body a{
+	color: rgb(81, 139, 139);
+	text-shadow: 10px 3px 1px #0303037a;
+}
+.card-body a:hover, .QA-text:hover{
+	color:whitesmoke;
+}
+.QA-text{
+	color: rgb(81, 139, 139);
+	text-shadow: 10px 3px 1px #0303037a;
+	font-size:1.2rem;
+}
+.QA-body{
+	font-size:1.1rem;
+}
+
+@media screen and (min-width: 768px){
+	.nav-link{
+		font-size: 95%;
+	}
+}
+
+
+
+
+
+
+

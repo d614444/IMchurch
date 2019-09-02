@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'imchurch',
         'USER': 'root',
         'PASSWORD': 'd0958266249',
-        'HOST': 'localhost' ,
+        'HOST': '127.0.0.1' ,
         'PORT': '',
     }
 }
