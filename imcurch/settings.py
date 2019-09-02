@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'king',
-
+    'rest_framework',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -84,7 +85,7 @@ DATABASES = {
         'NAME': 'imchurch',
         'USER': 'root',
         'PASSWORD': 'd0958266249',
-        'HOST': '' ,
+        'HOST': '127.0.0.1' ,
         'PORT': '',
     }
 }
