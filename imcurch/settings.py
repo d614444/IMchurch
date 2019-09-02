@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'king',
-    'rest_framework',
-    'social_django',
-    'phonenumber_field',
+
 ]
 
 MIDDLEWARE = [
@@ -86,7 +84,7 @@ DATABASES = {
         'NAME': 'imchurch',
         'USER': 'root',
         'PASSWORD': 'd0958266249',
-        'HOST': '127.0.0.1' ,
+        'HOST': '' ,
         'PORT': '',
     }
 }
@@ -140,5 +138,3 @@ STATICFILES_DIRS = [
 os.path.join(BASE_DIR, 'static'),
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = '295589044689432' # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '57f814bb299b0d534ddb50d9d0fdde7e' # Facebook App Secret
