@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+body {
+  background-color: #54000d;
+  font-family: "Noto Serif TC", serif; }
+
+hr {
+  border-top: 1.2px solid #fdfdfd;
+  text-align: center;
+  width: 50%; }
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+.lead {
+  font-size: 1.1rem; }
+
+hr#one:after {
+  content: '問候語';
+  display: inline-block;
+  position: relative;
+  top: -1.6rem;
+  padding: 0 20px;
+  background: #54000d;
+  color: #faf3f3;
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif; }
+
+hr#two:after {
+  content: '背景介紹';
+  display: inline-block;
+  position: relative;
+  top: -1.6rem;
+  padding: 0 20px;
+  background: #54000d;
+  color: #faf3f3;
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif; }
+
+hr#three:after {
+  content: '我要購票';
+  display: inline-block;
+  position: relative;
+  top: -1.6rem;
+  padding: 0 20px;
+  background: #54000d;
+  color: #faf3f3;
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif; }
+
+hr#four:after {
+  content: '宴會規則';
+  display: inline-block;
+  position: relative;
+  top: -1.6rem;
+  padding: 0 20px;
+  background: #54000d;
+  color: #faf3f3;
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif; }
+
+hr#five:after {
+  content: 'Q&A';
+  display: inline-block;
+  position: relative;
+  top: -1.6rem;
+  padding: 0 20px;
+  background: #54000d;
+  color: #faf3f3;
+  font-size: 2rem;
+  font-family: "Noto Serif TC", serif; }
+
+.header-img {
+  width: 100%; }
+
+.part {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #54000d;
+  color: #f6f8f8;
+  text-shadow: 2px 3px 1px #0303037a; }
+
+.card {
+  height: auto;
+  border: 1px solid;
+  color: #518b8b;
+  background-color: #54000d; }
+
+.rule {
+  background-color: #54000d;
+  border: none;
+  margin-bottom: 1rem; }
+
+#navbar {
+  height: 9%;
+  background-color: #54000d; }
+
+#navbar a {
+  font-size: 120%;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px  #e6d7d77a; }
+
+#navbar a:hover, #navbar a.active {
+  color: whitesmoke; }
+
+#section-3 {
+  margin-top: 12rem; }
+
+#section-4 {
+  margin-top: 12rem; }
+
+#section-5 {
+  margin-top: 12rem; }
+
+.card-header {
+  border: none;
+  background-color: #54000d;
+  color: #f2f7f7;
+  text-shadow: 2px 3px 1px #0303037a; }
+
+.card-body {
+  background-color: #54000d;
+  color: #f4f7f7;
+  text-shadow: 2px 3px 1px #0303037a; }
+
+.card-body a {
+  color: #f3f5f5;
+  text-shadow: 1px 3px 1px #0303037a; }
+
+.card-body a:hover, .QA-text:hover {
+  color: #e69c9c; }
+
+.QA-text {
+  color: #f2f7f7;
+  text-shadow: 1px 2px 1px #0303037a;
+  font-size: 1.1rem; }
+
+.QA-body {
+  font-size: 1.1rem; }
+
+.card-text {
+  margin-top: 1rem;
+  margin-bottom: 0rem; }
+
+/*# sourceMappingURL=church.css.map */

@@ -1,0 +1,167 @@
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+
+
+body{
+	background-color: rgb(84,0,13);
+	font-family: "Noto Serif TC", serif;
+}
+hr{
+	border-top: 1.2px solid #fdfdfd;
+	text-align: center;
+	width:50%;
+}
+p{
+	margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.lead{
+	font-size:1.1rem;
+}
+hr#one:after{
+	content: '問候語';
+	display: inline-block;
+	position: relative;
+	top: -1.6rem;
+	padding: 0 20px;
+	background:  rgb(84,0,13);
+	color: #faf3f3;
+	font-size: 2rem;
+	font-family: "Noto Serif TC", serif;
+}
+hr#two:after{
+	content: '背景介紹';
+	display: inline-block;
+	position: relative;
+	top: -1.6rem;
+	padding: 0 20px;
+	background:  rgb(84,0,13);
+	color: #faf3f3;
+	font-size: 2rem;
+	font-family: "Noto Serif TC", serif;
+}
+hr#three:after{
+	content: '我要購票';
+	display: inline-block;
+	position: relative;
+	top: -1.6rem;
+	padding: 0 20px;
+	background:  rgb(84,0,13);
+	color: #faf3f3;
+	font-size: 2rem;
+	font-family: "Noto Serif TC", serif;
+}
+hr#four:after{
+	content: '宴會規則';
+	display: inline-block;
+	position: relative;
+	top: -1.6rem;
+	padding: 0 20px;
+	background:  rgb(84,0,13);
+	color: #faf3f3;
+	font-size: 2rem;
+	font-family: "Noto Serif TC", serif;
+}
+hr#five:after{
+	content: 'Q&A';
+	display: inline-block;
+	position: relative;
+	top: -1.6rem;
+	padding: 0 20px;
+	background:  rgb(84,0,13);
+	color: #faf3f3;
+	font-size: 2rem;
+	font-family: "Noto Serif TC", serif;
+}
+
+.header-img{
+  width: 100%;
+
+}
+.part{
+	padding-right: 0;
+	padding-left: 0;
+	background-color: rgb(84,0,13);
+	color: rgb(246, 248, 248);
+	text-shadow: 2px 3px 1px #0303037a;
+}
+.part-1{
+	
+}
+.card{
+	height: auto;
+	border:1px solid;
+	color: rgb(81, 139, 139);
+	background-color: rgb(84,0,13);
+}
+.rule{
+	background-color: rgb(84,0,13);
+	border: none;
+	margin-bottom:1rem; 
+	
+	
+}
+#rulelist{
+	
+}
+#navbar{
+	height: 9%;
+	background-color: rgb(84,0,13);
+}
+#navbar a{
+	font-size: 120%;
+	color: rgba(0,0,0,0.5);
+	text-shadow:1px 1px 1px  #e6d7d77a;
+}
+#navbar a:hover, #navbar a.active {
+	color:whitesmoke;
+}
+#section-3{
+	margin-top: 12rem
+}
+#section-4{
+	margin-top: 12rem
+}
+#section-5{
+	margin-top: 12rem
+}
+.card-header{
+	border: none;
+	background-color: rgb(84,0,13);
+	color: rgb(242, 247, 247);
+	text-shadow: 2px 3px 1px #0303037a;
+}
+.card-body{
+	background-color: rgb(84,0,13);
+	color: rgb(244, 247, 247);
+	text-shadow: 2px 3px 1px #0303037a;
+}
+.card-body a{
+	color: rgb(243, 245, 245);
+	text-shadow: 1px 3px 1px #0303037a;
+}
+.card-body a:hover, .QA-text:hover{
+	color:rgb(230, 156, 156);
+}
+.QA-text{
+	color: rgb(242, 247, 247);
+	text-shadow: 1px 2px 1px #0303037a;
+	font-size:1.1rem;
+}
+.QA-body{
+	font-size:1.1rem;
+}
+.card-text{
+	margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+
+
+
+
+
+
+
