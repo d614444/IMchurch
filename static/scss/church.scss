@@ -6,74 +6,80 @@
 
 body{
 	background-color: rgb(84,0,13);
-	font-family: "Noto Serif TC", serif;
+	font-family: "微軟正黑體";
 }
 hr{
 	border-top: 1.2px solid #fdfdfd;
 	text-align: center;
 	width:50%;
 }
+.nav-link{
+	font-weight:600;
+	
+}
+.special-text{
+	color:rgb(255,244,197);
+}
 p{
 	margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .lead{
 	font-size:1.1rem;
 }
-hr#one:after{
-	content: '問候語';
-	display: inline-block;
-	position: relative;
-	top: -1.6rem;
-	padding: 0 20px;
-	background:  rgb(84,0,13);
-	color: #faf3f3;
+.main-title{
 	font-size: 2rem;
-	font-family: "Noto Serif TC", serif;
+	font-family: "微軟正黑體";
+	font-weight: 300;
 }
+
 hr#two:after{
-	content: '背景介紹';
+	content: 'B a c k g r o u n d';
 	display: inline-block;
 	position: relative;
-	top: -1.6rem;
+	top: -1.01rem;
 	padding: 0 20px;
 	background:  rgb(84,0,13);
 	color: #faf3f3;
-	font-size: 2rem;
-	font-family: "Noto Serif TC", serif;
+	font-size: 1rem;
+	font-family: "微軟正黑體";
+	font-weight: 300;
 }
 hr#three:after{
-	content: '我要購票';
+	content: 'T i c k e t';
 	display: inline-block;
 	position: relative;
-	top: -1.6rem;
+	top: -1.01rem;
 	padding: 0 20px;
 	background:  rgb(84,0,13);
 	color: #faf3f3;
-	font-size: 2rem;
-	font-family: "Noto Serif TC", serif;
+	font-size: 1rem;
+	font-family: "微軟正黑體";
+	font-weight: 300;
 }
 hr#four:after{
-	content: '宴會規則';
+	content: 'R u l e s';
 	display: inline-block;
 	position: relative;
-	top: -1.6rem;
+	top: -1.01rem;
 	padding: 0 20px;
 	background:  rgb(84,0,13);
 	color: #faf3f3;
-	font-size: 2rem;
-	font-family: "Noto Serif TC", serif;
+	font-size: 1rem;
+	font-family: "微軟正黑體";
+	font-weight: 300;
 }
 hr#five:after{
 	content: 'Q&A';
 	display: inline-block;
 	position: relative;
-	top: -1.6rem;
+	top: -1.01rem;
 	padding: 0 20px;
 	background:  rgb(84,0,13);
 	color: #faf3f3;
-	font-size: 2rem;
-	font-family: "Noto Serif TC", serif;
+	font-size: 1rem;
+	font-family: "微軟正黑體";
+	font-weight: 300;
 }
 
 .header-img{
@@ -85,11 +91,10 @@ hr#five:after{
 	padding-left: 0;
 	background-color: rgb(84,0,13);
 	color: rgb(246, 248, 248);
-	text-shadow: 2px 3px 1px #0303037a;
+	margin-top:0 ;
+	margin-bottom: 0;
 }
-.part-1{
-	
-}
+
 .card{
 	height: auto;
 	border:1px solid;
@@ -112,11 +117,11 @@ hr#five:after{
 }
 #navbar a{
 	font-size: 120%;
-	color: rgba(0,0,0,0.5);
-	text-shadow:1px 1px 1px  #e6d7d77a;
+	color: rgba(245, 241, 241, 0.5);
+	
 }
 #navbar a:hover, #navbar a.active {
-	color:whitesmoke;
+	color:rgb(255,244,197);
 }
 #section-3{
 	margin-top: 12rem
@@ -127,31 +132,76 @@ hr#five:after{
 #section-5{
 	margin-top: 12rem
 }
+.card-title{
+	font-size:1rem;
+	font-weight: 300;
+	color:rgb(255,244,197);
+}
 .card-header{
 	border: none;
 	background-color: rgb(84,0,13);
 	color: rgb(242, 247, 247);
-	text-shadow: 2px 3px 1px #0303037a;
+
+	
+}
+.sell-header{
+	border: 0.5px solid rgb(242, 247, 247);
+	background-color: rgb(84,0,13);
+	color: rgb(242, 247, 247);
+	border-radius: 27px 27px 1px 1px !important;
+	
+}
+
+.sell-body{
+	border: 0.5px solid rgb(242, 247, 247)!important;;
+	background-color: rgb(84,0,13)!important;;
+	color: rgb(244, 247, 247)!important;;
+	border-radius: 1px 1px 27px 27px !important;
+	height:9rem!important;
+	
+}
+.card-sell a{
+	text-decoration:none
+}
+.sell-body-text{
+	font-size:4rem;
+	font-weight: 100;
+	color:rgb(255,244,197);
+	
+}
+.sell-header:hover, {
+	background-color:rgba(242, 247, 247, 0.1);
+}
+.sell-body:hover{
+	background-color:rgba(242, 247, 247, 0.1);
 }
 .card-body{
+	border: none;
 	background-color: rgb(84,0,13);
 	color: rgb(244, 247, 247);
-	text-shadow: 2px 3px 1px #0303037a;
+	
+	
+}
+.card-sell{
+	border-radius: 27px 27px 27px 27px;
+
 }
 .card-body a{
 	color: rgb(243, 245, 245);
 	text-shadow: 1px 3px 1px #0303037a;
 }
+
 .card-body a:hover, .QA-text:hover{
-	color:rgb(230, 156, 156);
+	color:rgb(255,244,197);
 }
 .QA-text{
 	color: rgb(242, 247, 247);
-	text-shadow: 1px 2px 1px #0303037a;
-	font-size:1.1rem;
+	font-size:1rem;
+	font-weight: 300;
 }
 .QA-body{
-	font-size:1.1rem;
+	font-size:1rem;
+	font-weight: 300;
 }
 .card-text{
 	margin-top: 1rem;

@@ -18,6 +18,26 @@
 </head>
 <body>
 	<style>
+	@media screen and (max-width: 667px){
+		#navbar a{
+			font-size: 80%;
+		}
+		.lead{
+			font-size:0.8rem;
+		}
+		.card-body a:hover {
+			color:whitesmoke;
+		}
+		.QA-text{
+			font-size:0.9rem;
+		}
+		.QA-body{
+			font-size:0.8rem;
+		}
+		.card-area{
+			flex-direction: column;
+		}
+}
 		@media screen and (max-width: 650px){
 		#navbar a{
 		font-size: 80%;
@@ -34,148 +54,170 @@
 		.QA-body{
 			font-size:0.8rem;
 		}
+		.card-title{
+			font-size:1rem;
+		}
 }
+
 
 	</style>
 	<nav id="navbar" class="navbar navbar-expand fixed-top  navbar-light ">
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav" id="find-tag">
-      			<li id='test' class="nav-item  ">
-        			<a class="nav-link active" href="#section-1">問候語 </a>
+				<li class="nav-item active">
+        			<a class="nav-link " href="#section-2">Background</a>
       			</li>
 				<li class="nav-item active">
-        			<a class="nav-link " href="#section-2">背景介紹</a>
+        			<a class="nav-link " href="#section-3">Ticket<span class="sr-only">(current)</span></a>
       			</li>
 				<li class="nav-item active">
-        			<a class="nav-link " href="#section-3">我要購票<span class="sr-only">(current)</span></a>
+        			<a class="nav-link " href="#section-4">Rules<span class="sr-only">(current)</span></a>
       			</li>
 				<li class="nav-item active">
-        			<a class="nav-link " href="#section-4">宴會規則<span class="sr-only">(current)</span></a>
-      			</li>
-				<li class="nav-item active">
-        			<a class="nav-link " href="#section-5">宴會Q&A<span class="sr-only">(current)</span></a>
+        			<a class="nav-link " href="#section-5">Q&A<span class="sr-only">(current)</span></a>
       			</li>                
 			</ul>	  
 	  	</div>
 	</nav>
 	<header id="header" class=" d-flex  align-items-center flex-md-row flex-column bg-white menu-bar">
-		<img src="{% static "images/first.png" %}" class="header-img img-fluid " alt="Responsive image">
+		<img src="{% static "images/head-2.png" %}" class="header-img img-fluid " alt="Responsive image">
 	</header><!-- /header -->
-	<section id='section-1'  class="container part mt-4 nav-part">
+	<section id='section-1'  class="container part mt-4 ">
 		<div class='part-1 text-center' >
-			{% comment %} <h1>問候語</h1> {% endcomment %}
-			<hr class ="my-5" id='one' data-symbol="Hello">
-			<div class = 'mt-5'>
-				<p class="lead">你好，我是大衛</p>
-				<p class='lead'>我想邀請你參加一場皇室宴會，</p>
-				<p class='lead'>在這場盛宴裡，你會經歷一段愛與慾竄流的奇妙旅程，</p>
-				<p class='lead'>你將有機會潛入我慾望的最深處，同時，你會觸摸到你心中，</p>
-				<p class='lead'>那個最幽黑的渴望，</p>
-				<p class='lead'>只有誠實面對自己選擇的人，才有機會，觸摸到那位，</p>
-				<p class="lead">最獨一無二的-----KING！</p>
+			<div class = 'mt-5 mx-5'>
+				<p class="lead special-text">你好</p>
+				<p class="lead special-text">我是大衛</p>
+				<p class='lead'>我想邀請你參加一場皇室宴會</p>
+				<p class='lead'>在這場盛宴裡，你會經歷一段愛與慾竄流的奇妙旅程</p>
+				<p class='lead'>你將有機會潛入我慾望的最深處，同時，你會觸摸到你心中</p>
+				<p class='lead'>那個最幽黑的渴望</p>
+				<p class='lead'>只有誠實面對自己選擇的人才有機會</p>
+				<p class='lead'>觸摸到那位</p>
+				<p class="lead special-text">最獨一無二的 — — KING！</p>
 			</div>	
 		</div>
 		<div class = "text-center">	
-			<p class = "lead mt-5"><strong>「喔！對了，提醒您，這場宴會18禁...」</strong></p>
+			<p class = "lead mt-5">「喔！對了，提醒您，這場宴會18禁...」</p>
 		</div>
 	</section>
 	<section class="container-fluid m-0 p-0" >
-		<img src="{% static "images/second.png" %}" class=" img-fluid " alt="Responsive image">
+		<img src="{% static "images/second-1.png" %}" class=" img-fluid " alt="Responsive image">
 	</section>
 	<section id="section-2" class="container part nav-part">
-		<div class='part-1 text-center my-5' >
-			<hr id="two" class='my-5'>
-				<p class="lead ">根據聖經大衛王與拔示巴的故事所改編。</p>
-				<p class= "lead ">大衛英勇善戰、才智多謀，在他作王的期間，</p>
-				<p class= "lead">無意間發現了一名貌美動人的女人-拔示巴，拔示巴是烏利亞的妻子，</p>
-				<p class="lead">烏利亞是大衛手下的悍將，
-				<p class="lead">大衛仍不顧一切地將拔示巴佔為己有，並使其懷孕。</p>
-				<p class= "lead">大衛想將拔示巴肚裡的孩子，變成是烏利亞的，</p>
-				<p class= "lead">卻始終沒能成功，因此大衛決定不擇手段，掩飾所有的一切...。</p>
+		<div class='part-1 text-center' >
+			<h5 class='main-title special-text pb-2'>背景介紹</h5>
+			<hr id="two" class=''>
+			<div class='mx-5 pt-3'>
+				<p class= "lead">根據聖經大衛王與拔示巴的故事所改編</p>
+				<p class= "lead">大衛英勇善戰、才智多謀</p>
+				<p class= "lead">在他作王的期間</p>
+				<p class= "lead">無意間發現了一名貌美動人的女人 — 拔示巴</p>
+				<p class= "lead">拔示巴是烏利亞的妻子</p>
+				<p class= "lead">烏利亞是大衛手下的悍將</p>
+				<p class= "lead">大衛仍不顧一切地將拔示巴佔為己有</p>
+				<p class= "lead">並使其懷孕</p>
+				<p class= "lead">大衛想將拔示巴肚裡的孩子</p>
+				<p class= "lead">變成是烏利亞的</p>
+				<p class= "lead">卻始終沒能成功</p>
+				<p class= "lead special-text">因此大衛決定不擇手段</p>
+				<p class= "lead special-text">掩飾所有的一切...</p>
+			</div>	
 		</div>
 	</section>
 	<section class="container nav-part" id="section-3">
 		<div class='part text-center my-5' >
-			<hr id='three' class='my-5'>
+			<h5 class='main-title special-text pb-2'>我要購票</h5>
+			<hr id='three' class=''>
+			<p class="lead pt-3">每場只提供80張票，售完為止。</p>
 		</div>	
-			<div class="card-deck text-center card-area">
-				<div class="card mb-4">
-					<div class="card-header  d-flex">
-						<h4 class="my-0 font-weight-normal card-title flex-fill">12/20</h4>
-						<h4 class="my-0 font-weight-normal card-title flex-fill">Friday</h4>
+			<div class="card-deck  card-area">
+				<div class="card card-sell mb-4">
+					<a href="">
+					<div class="card-header sell-header">
+						<div class="my-0 d-flex justify-content-center ">
+							<div class='card-title my-0 mx-3'>12/22</div>
+						 </div>
+						 <div class="my-0 d-flex justify-content-center ">
+						 	<div class='card-title my-0 mx-1'>Friday</div>
+							<div class='card-title my-0 mx-1'>19:00</div>
+						</div>	
 					</div>
-					<div class="card-body ">
-						<div class='d-flex '>
-							<div class='flex-column flex-fill'>演出時間</div>
-							<div class='flex-column flex-fill'>剩餘張數</div>
-							<div class='flex-column flex-fill'></div>
+					<div class="card-body sell-body">
+						<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
+					</div>
+					</a>		
+				</div>
+				<div class="card card-sell mb-4">
+					<a href="">
+					<div class="card-header sell-header">
+						<div class="my-0 d-flex justify-content-center ">
+							<div class='card-title my-0 mx-3'>12/23</div>
 						</div>
-						<div class='d-flex '>
-							<div class='flex-column flex-fill'>19:30</div>
-							<div class='flex-column flex-fill'>80</div>
-							<div class='flex-column flex-fill'>
-						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
-						</div>
+						<div class="my-0 d-flex justify-content-center ">
+							<div class='card-title my-0 mx-1'>Saturday</div>
+							<div class='card-title my-0 mx-1'>14:00</div>
+						</div>	
 					</div>
-						
+					<div class="card-body sell-body">
+						<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
+					</div>
+					</a>
 				</div>
-			<div class="card mb-4">
-				<div class="card-header  d-flex">
-					<h4 class="my-0 font-weight-normal flex-fill">12/21</h4>
-					<h4 class="my-0 font-weight-normal flex-fill">Saturday</h4>
-				</div>
-				<div class="card-body">
-					<div class='d-flex '>
-						<div class='flex-column flex-fill '>時間</div>
-						<div class='flex-column flex-fill'>剩餘張數</div>
-						<div class='flex-column flex-fill'></div>
+			<div class="card card-sell mb-4">
+				<a href="">
+				<div class="card-header sell-header">
+					<div class="my-0 d-flex justify-content-center ">
+						<div class='card-title my-0 mx-3'>12/23</div>
 					</div>
-					<div class='d-flex '>
-						<div class='flex-column flex-fill'>14:00</div>
-						<div class='flex-column flex-fill'>80</div>
-						<div class='flex-column flex-fill'>
-						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
-					</div>
-					<div class='d-flex '>
-						<div class='flex-column flex-fill'>19:00</div>
-						<div class='flex-column flex-fill'>80</div>
-						<div class='flex-column flex-fill'>
-						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
+					<div class="my-0 d-flex justify-content-center ">
+						<div class='card-title my-0 mx-1'>Saturday</div>
+						<div class='card-title my-0 mx-1'>19:00</div>
 					</div>
 				</div>
-			</div>		
-			<div class="card mb-4">
-				<div class="card-header d-flex">
-					<h4 class="my-0 font-weight-normal flex-fill">12/22</h4>
-					<h4 class="my-0 font-weight-normal flex-fill">Sunday</h4>
+				<div class="card-body sell-body">
+					<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
 				</div>
-				<div class="card-body">
-					<div class='d-flex '>
-						<div class='flex-column flex-fill '>時間</div>
-						<div class='flex-column flex-fill'>剩餘張數</div>
-						<div class='flex-column flex-fill'></div>
+				</a>
+			</div>
+			<div class="card card-sell mb-4">
+				<a href="">
+				<div class="card-header sell-header">
+					<div class="my-0 d-flex justify-content-center ">
+						<div class='card-title my-0 mx-3'>12/24</div>
 					</div>
-					<div class='d-flex '>
-						<div class='flex-column flex-fill'>10:00</div>
-						<div class='flex-column flex-fill'>80</div>
-						<div class='flex-column flex-fill'>
-						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
-					</div>
-					<div class='d-flex '>
-						<div class='flex-column flex-fill'>14:00</div>
-						<div class='flex-column flex-fill'>80</div>
-						<div class='flex-column flex-fill'>
-						<a href='http://www.google.com/'  target="_blank" style="text-decoration:none;">購票</a></div>
-						
+					<div class="my-0 d-flex justify-content-center ">
+						<div class='card-title my-0 mx-1'>Sunday</div>
+						<div class='card-title my-0 mx-1'>10:00</div>
 					</div>
 				</div>
+				<div class="card-body sell-body">
+					<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
+				</div>
+				</a>
+			</div>						
+			<div class="card card-sell mb-4">
+				<div class="card-header sell-header">
+					<a href="">
+					<div class="my-0 d-flex justify-content-center ">
+						<div class='card-title my-0 mx-3'>12/24</div>
+					</div>
+					<div class="my-0 d-flex justify-content-center ">
+						<div class='card-title my-0 mx-1'>Sunday</div>
+						<div class='card-title my-0 mx-1'>14:00</div>
+					</div>
+				</div>
+				<div class="card-body sell-body">
+					<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
+				</div>
+				</a>
 			</div>
 		</div>
 	</section>
 	<section class="container part nav-part" id="section-4">
 		<div class='part-1 lead text-center' >
-			<hr class='my-5' id="four">
-			<ul class='list-group mx-5' id="rulelist">
+			<h5 class='main-title special-text pb-2'>宴會規則</h5>
+			<hr class='' id="four">
+			<ul class='list-group mx-5 pt-3' id="rulelist">
 				<li class="list-group-item rule"> • 宴會採預購模式，同一時段最多容納80位賓客，不接受當場退換票。</li>
 				<li class="list-group-item rule"> • 宴會採分批入場，遲到將無法參加宴會，亦不予退費，請您於宴會時間前15分鐘抵達！</li>
 				<li class="list-group-item rule"> • 為了宴會品質，我們提供寄物服務，請您攜帶精簡的行囊與一顆期待的心。</li>
@@ -192,8 +234,8 @@
 	</section>
 	<section class="container part nav-part" id="section-5">
 		<div class='part-1 ' >
-			
-			<hr class='my-5' id="five">
+			<h5 class='main-title special-text pb-2 text-center'>問與答</h5>
+			<hr class='mb-5' id="five">
 			<div class="accordion text-center" id="accordionExample">
   				<div class="card" style="border:none;margin-bottom:0px;height:auto">
     				<div class="card-header" id="headingOne">
