@@ -19,6 +19,39 @@
 <body>
 
 	<style>
+		@media screen and (max-width: 768px){
+		#navbar a{
+			font-size: 80%;
+		}
+		.lead{
+			font-size:0.8rem;
+		}
+		.card-body a:hover {
+			color:whitesmoke;
+		}
+		.QA-text{
+			font-size:0.9rem;
+		}
+		.QA-body{
+			font-size:0.8rem;
+		}
+		.card-area{
+			flex-direction: column;
+		}
+		#ticket-1{
+			position: absolute;
+    		font-size: 168%;
+    		color: #f2f7f7;
+    		top: 30%;
+    		left: 30%;
+    		font-weight: 400;
+    		transform: rotate(-3deg);
+    		font-family: 'Times New Roman', Times, serif;
+		}
+		#section-4{
+			margin-top:3rem
+		}
+}
 	@media screen and (max-width: 667px){
 		#navbar a{
 			font-size: 80%;
@@ -37,6 +70,19 @@
 		}
 		.card-area{
 			flex-direction: column;
+		}
+		#ticket-1{
+			position: absolute;
+    		font-size: 133%;
+    		color: #f2f7f7;
+    		top: 37%;
+    		left: 33%;
+    		font-weight: 400;
+    		transform: rotate(-3deg);
+    		font-family: 'Times New Roman', Times, serif;
+		}
+		#section-4{
+			margin-top:5rem
 		}
 }
 		@media screen and (max-width: 650px){
@@ -57,6 +103,16 @@
 		}
 		.card-title{
 			font-size:1rem;
+		}
+		#ticket-1{
+			position: absolute;
+    		font-size: 125%;
+    		color: #f2f7f7;
+    		top: 33%;
+    		left: 32%;
+    		font-weight: 400;
+    		transform: rotate(-3deg);
+    		font-family: 'Times New Roman', Times, serif;
 		}
 }
 
@@ -134,89 +190,39 @@
 			<hr id='three' class=''>
 			<p class="lead pt-3">每場只提供80張票，售完為止。</p>
 		</div>
-		{% comment %} <iframe id = 'kktix' class="kktix" src="https://kktix.com/tickets_widget?slug=db9c7ecb" frameborder="0" height="350" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"  style="background-color: #45a163;"></iframe>	 {% endcomment %}
-			<div class="card-deck  card-area">
-				<div class="card card-sell mb-4">
-					<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
-					<div class="card-header sell-header">
-						<div class="my-0 d-flex justify-content-center ">
-							<div class='card-title my-0 mx-3'>12/22</div>
-						 </div>
-						 <div class="my-0 d-flex justify-content-center ">
-						 	<div class='card-title my-0 mx-1'>Friday</div>
-							<div class='card-title my-0 mx-1'>19:00</div>
-						</div>	
-					</div>
-					<div class="card-body sell-body">
-						<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
-					</div>
-					</a>		
-				</div>
-				<div class="card card-sell mb-4">
-					<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
-					<div class="card-header sell-header">
-						<div class="my-0 d-flex justify-content-center ">
-							<div class='card-title my-0 mx-3'>12/23</div>
-						</div>
-						<div class="my-0 d-flex justify-content-center ">
-							<div class='card-title my-0 mx-1'>Saturday</div>
-							<div class='card-title my-0 mx-1'>14:00</div>
-						</div>	
-					</div>
-					<div class="card-body sell-body">
-						<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
-					</div>
-					</a>
-				</div>
-			<div class="card card-sell mb-4">
+		<div class="row align-items-center">
+			<div class = "col-4">
 				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
-				<div class="card-header sell-header">
-					<div class="my-0 d-flex justify-content-center ">
-						<div class='card-title my-0 mx-3'>12/23</div>
-					</div>
-					<div class="my-0 d-flex justify-content-center ">
-						<div class='card-title my-0 mx-1'>Saturday</div>
-						<div class='card-title my-0 mx-1'>19:00</div>
-					</div>
-				</div>
-				<div class="card-body sell-body">
-					<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
-				</div>
+				<span id="ticket-1" >80</span>
+				<img src="{% static "images/20.png" %}" class="  ticket" alt="Responsive image">
+				</a>
+			</div>			
+			<div class = "col-4">
+				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
+				<span id="ticket-1" >80</span>
+				<img src="{% static "images/21-1.png" %}" class="ticket" alt="Responsive image">
 				</a>
 			</div>
-			<div class="card card-sell mb-4">
+			<div class = "col-4">
 				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
-				<div class="card-header sell-header">
-					<div class="my-0 d-flex justify-content-center ">
-						<div class='card-title my-0 mx-3'>12/24</div>
-					</div>
-					<div class="my-0 d-flex justify-content-center ">
-						<div class='card-title my-0 mx-1'>Sunday</div>
-						<div class='card-title my-0 mx-1'>10:00</div>
-					</div>
-				</div>
-				<div class="card-body sell-body">
-					<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
-				</div>
-				</a>
-			</div>						
-			<div class="card card-sell mb-4">
-				<div class="card-header sell-header">
-					<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
-					<div class="my-0 d-flex justify-content-center ">
-						<div class='card-title my-0 mx-3'>12/24</div>
-					</div>
-					<div class="my-0 d-flex justify-content-center ">
-						<div class='card-title my-0 mx-1'>Sunday</div>
-						<div class='card-title my-0 mx-1'>14:00</div>
-					</div>
-				</div>
-				<div class="card-body sell-body">
-					<div class="my-0 d-flex justify-content-center sell-body-text">80</div>
-				</div>
+				<span id="ticket-1" >80</span>
+				<img src="{% static "images/21-2.png" %}" class="  ticket" alt="Responsive image">
 				</a>
 			</div>
-		</div>
+			<div class = "col-4">
+				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
+				<span id="ticket-1" >80</span>
+				<img src="{% static "images/22-1.png" %}" class="  ticket" alt="Responsive image">
+				</a>
+			</div>
+			<div class = "col-4">
+				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
+				<span id="ticket-1" >80</span>
+				<img src="{% static "images/22-2.png" %}" class=" ticket " alt="Responsive image">
+				</a>
+			</div>
+		</div>	
+		
 	</section>
 	<section class="container part nav-part" id="section-4">
 		<div class='part-1 lead text-center' >

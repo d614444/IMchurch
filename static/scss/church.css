@@ -227,4 +227,20 @@ hr#six:after {
   font-size: 1.2rem;
   font-weight: 200; }
 
+.ticket {
+  width: 90%; }
+
+.ticket-2 {
+  width: 60%; }
+
+#ticket-1 {
+  position: absolute;
+  font-size: 350%;
+  color: #f2f7f7;
+  top: 30%;
+  left: 29%;
+  font-weight: 400;
+  transform: rotate(-3deg);
+  font-family: 'Times New Roman', Times, serif; }
+
 /*# sourceMappingURL=church.css.map */
