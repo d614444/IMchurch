@@ -17,6 +17,7 @@
 	<title></title>
 </head>
 <body>
+
 	<style>
 	@media screen and (max-width: 667px){
 		#navbar a{
@@ -75,7 +76,10 @@
       			</li>
 				<li class="nav-item active">
         			<a class="nav-link " href="#section-5">Q&A<span class="sr-only">(current)</span></a>
-      			</li>                
+      			</li>
+				<li class="nav-item active">
+        			<a class="nav-link " href="#section-6">About<span class="sr-only">(current)</span></a>
+      			</li>                    
 			</ul>	  
 	  	</div>
 	</nav>
@@ -93,7 +97,7 @@
 				<p class='lead'>那個最幽黑的渴望</p>
 				<p class='lead'>只有誠實面對自己選擇的人才有機會</p>
 				<p class='lead'>觸摸到那位</p>
-				<p class="lead special-text">最獨一無二的 — — KING！</p>
+				<p class="lead special-text">最獨一無二的 <span class='px-4'> KING！</span></p>
 			</div>	
 		</div>
 		<div class = "text-center">	
@@ -129,10 +133,11 @@
 			<h5 class='main-title special-text pb-2'>我要購票</h5>
 			<hr id='three' class=''>
 			<p class="lead pt-3">每場只提供80張票，售完為止。</p>
-		</div>	
+		</div>
+		{% comment %} <iframe id = 'kktix' class="kktix" src="https://kktix.com/tickets_widget?slug=db9c7ecb" frameborder="0" height="350" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"  style="background-color: #45a163;"></iframe>	 {% endcomment %}
 			<div class="card-deck  card-area">
 				<div class="card card-sell mb-4">
-					<a href="">
+					<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
 					<div class="card-header sell-header">
 						<div class="my-0 d-flex justify-content-center ">
 							<div class='card-title my-0 mx-3'>12/22</div>
@@ -148,7 +153,7 @@
 					</a>		
 				</div>
 				<div class="card card-sell mb-4">
-					<a href="">
+					<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
 					<div class="card-header sell-header">
 						<div class="my-0 d-flex justify-content-center ">
 							<div class='card-title my-0 mx-3'>12/23</div>
@@ -164,7 +169,7 @@
 					</a>
 				</div>
 			<div class="card card-sell mb-4">
-				<a href="">
+				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
 				<div class="card-header sell-header">
 					<div class="my-0 d-flex justify-content-center ">
 						<div class='card-title my-0 mx-3'>12/23</div>
@@ -180,7 +185,7 @@
 				</a>
 			</div>
 			<div class="card card-sell mb-4">
-				<a href="">
+				<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
 				<div class="card-header sell-header">
 					<div class="my-0 d-flex justify-content-center ">
 						<div class='card-title my-0 mx-3'>12/24</div>
@@ -197,7 +202,7 @@
 			</div>						
 			<div class="card card-sell mb-4">
 				<div class="card-header sell-header">
-					<a href="">
+					<a href="https://imchurchking.kktix.cc/events/db9c7ecb" target="_blank">
 					<div class="my-0 d-flex justify-content-center ">
 						<div class='card-title my-0 mx-3'>12/24</div>
 					</div>
@@ -344,9 +349,46 @@
 			</div>	  
 		</div>
 	</section>
+	<section id='section-6' class="container part nav-part">
+		<div class='part-1 text-center' >
+			<h5 class='main-title special-text pb-2'>關於我們</h5>
+			<hr id="six" class=''>
+			<div class="dropup">
+				<button type="button" class="btn about-content-button dropdown-toggle mt-3" data-toggle="modal" data-target="#exampleModalLong">
+  					關於我們的故事
+				</button>
+			</div>
+			<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-body about-content">
+        					<p class = 'about-content-maintitle'>iM行動教會X禧劇團</p>
+							<p class="text-left lead about-content-subtitle">禧劇團</p>
+							<p class="text-left lead about-content-title">由iM行動教會主任牧師松慕強命名</p>
+							<p class="text-left lead about-content-text">禧，取自於「禧年」，是7個安息年週期的後面一年（第50年），也有另一種觀點認為是第49年。</p>
+							<p class="text-left lead about-content-text pt-0">根據聖經規則，在以色列王國和猶大王國領土，已經賣掉的土地這時可以得回，而賣身為奴者這時也可以重獲自由。《維基百科解釋》
+							禧劇團的創立，主要藉由網路短片使人認識神，透過戲劇釋放自由的訊息。</p>
+							<p class="text-left lead about-content-title">沈浸式劇場</p>
+							<p class="text-left lead about-content-text">沈浸式劇場，爲時尚、流行、藝術、戲劇界，帶來巨大的影響，為世界帶來沈浸式戲劇啟蒙的，是英國劇團Punchdrunk創作的《sleep no more 》，該劇改編自莎翁名作《馬克白》。</p>
+							<p class="text-left lead about-content-text">《sleep no more》在紐約與上海造成風潮，影視明星各個打卡觀看，不斷有粉絲同齣戲一再買票，觀看了數十上百次，《sleep no more》演出場所位於有許多房間的旅館內，不同房間上演不同的故事，觀眾戴上面具穿梭於旅館各處，隨己意跟隨演員，由觀眾創造屬於自己的主角與故事，擁有專屬自己那份獨特的體驗。</p>
+							<p class="text-left lead about-content-title">戲劇普遍規律依然被遵守</p>
+							<p class="text-left lead about-content-text">沈浸式戲劇打破傳統戲劇演員在台上表演，觀眾在台下觀看的觀演方式，把觀演關係置於流動的時空之中，觀眾的主動探索在整齣戲中至關重要，不同的時空選擇會產生不同的故事線。</p>
+							<p class="text-left lead about-content-text">作為國際戲劇界的新寵，沈浸式戲劇雖然特立獨行，但戲劇的普遍規律依然被遵守。由觀眾定義主角的沈浸式戲劇，非但沒有淡化戲劇的使命，反而使戲劇的核心，深化在觀眾的心裡，使人不斷地反思與回味。英國劇團Punchdrunk藝術總監費力克斯·巴雷特說：「希望藉沈浸式戲劇賦予觀眾一種力量，讓他們在娛樂體驗中自由選擇，並為自己的選擇負責。」</p>
+							<p class="text-left lead about-content-title">《KING》</p>
+							<p class="text-left lead about-content-text">劇本改編自聖經大衛與拔示巴的故事，採用《sleep no more 》的形式，藉由沈浸式戲劇，讓觀眾能深入以主觀的方式融入劇情。</p>
+      					</div>
+      				<div class="modal-footer  p-0">
+        				<button type="button" class="btn" data-dismiss="modal" style="color:rgb(84,0,13)">Close</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+	</div>
+	</section>
 	<section id='sectionlast' class="container-fluid part">
 		<img src="{% static "images/last.png" %}" class=" img-fluid " alt="Responsive image">
 	</section>
+
 
 </body>
 </html>

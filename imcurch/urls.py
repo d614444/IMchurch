@@ -19,7 +19,7 @@ from king.views import mainpage, login_page, registeredpage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Imking/', mainpage ),
+    path('iMKING/', mainpage ),
     path('login/', login_page),
     path('registered/', registeredpage),
     path('social-auth/', include('social_django.urls', namespace="social")),

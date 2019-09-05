@@ -10,7 +10,7 @@ hr {
   width: 50%; }
 
 .nav-link {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .special-text {
   color: #fff4c5; }
@@ -64,7 +64,19 @@ hr#four:after {
   font-weight: 300; }
 
 hr#five:after {
-  content: 'Q&A';
+  content: ' Q & A ';
+  display: inline-block;
+  position: relative;
+  top: -1.01rem;
+  padding: 0 20px;
+  background: #54000d;
+  color: #faf3f3;
+  font-size: 1rem;
+  font-family: "微軟正黑體";
+  font-weight: 300; }
+
+hr#six:after {
+  content: ' A b o u t ';
   display: inline-block;
   position: relative;
   top: -1.01rem;
@@ -117,6 +129,9 @@ hr#five:after {
 #section-5 {
   margin-top: 12rem; }
 
+#section-6 {
+  margin-top: 12rem; }
+
 .card-title {
   font-size: 1rem;
   font-weight: 300;
@@ -166,7 +181,7 @@ hr#five:after {
   color: #f3f5f5;
   text-shadow: 1px 3px 1px #0303037a; }
 
-.card-body a:hover, .QA-text:hover {
+.card-body a:hover, .QA-text:hover, .about-content-button:hover {
   color: #fff4c5; }
 
 .QA-text {
@@ -181,5 +196,35 @@ hr#five:after {
 .card-text {
   margin-top: 1rem;
   margin-bottom: 0rem; }
+
+.about-content {
+  background-color: #54000d; }
+
+.about-content-maintitle {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff4c5; }
+
+.about-content-subtitle {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #fff4c5; }
+
+.about-content-title {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fff4c5; }
+
+.about-content-text {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #f2f7f7;
+  line-height: 2rem;
+  letter-spacing: 0.05rem; }
+
+.about-content-button {
+  color: #f2f7f7;
+  font-size: 1.2rem;
+  font-weight: 200; }
 
 /*# sourceMappingURL=church.css.map */

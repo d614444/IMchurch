@@ -14,7 +14,7 @@ hr{
 	width:50%;
 }
 .nav-link{
-	font-weight:600;
+	font-weight:400;
 	
 }
 .special-text{
@@ -70,7 +70,19 @@ hr#four:after{
 	font-weight: 300;
 }
 hr#five:after{
-	content: 'Q&A';
+	content: ' Q & A ';
+	display: inline-block;
+	position: relative;
+	top: -1.01rem;
+	padding: 0 20px;
+	background:  rgb(84,0,13);
+	color: #faf3f3;
+	font-size: 1rem;
+	font-family: "微軟正黑體";
+	font-weight: 300;
+}
+hr#six:after{
+	content: ' A b o u t ';
 	display: inline-block;
 	position: relative;
 	top: -1.01rem;
@@ -108,9 +120,7 @@ hr#five:after{
 	
 	
 }
-#rulelist{
-	
-}
+
 #navbar{
 	height: 9%;
 	background-color: rgb(84,0,13);
@@ -130,6 +140,9 @@ hr#five:after{
 	margin-top: 12rem
 }
 #section-5{
+	margin-top: 12rem
+}
+#section-6{
 	margin-top: 12rem
 }
 .card-title{
@@ -191,7 +204,7 @@ hr#five:after{
 	text-shadow: 1px 3px 1px #0303037a;
 }
 
-.card-body a:hover, .QA-text:hover{
+.card-body a:hover, .QA-text:hover, .about-content-button:hover{
 	color:rgb(255,244,197);
 }
 .QA-text{
@@ -206,6 +219,37 @@ hr#five:after{
 .card-text{
 	margin-top: 1rem;
     margin-bottom: 0rem;
+}
+
+.about-content{
+	background-color: rgb(84,0,13);
+}
+.about-content-maintitle{
+	font-size:2rem;
+	font-weight: 300;
+	color:rgb(255,244,197);
+}
+.about-content-subtitle{
+	font-size:1.2rem;
+	font-weight: 200;
+	color:rgb(255,244,197);
+}
+.about-content-title{
+	font-size:1rem;
+	font-weight: 200;
+	color:rgb(255,244,197);
+}
+.about-content-text{
+	font-size:1rem;
+	font-weight: 200;
+	color:rgb(242, 247, 247);
+	line-height: 2rem;
+	letter-spacing:0.05rem;
+}
+.about-content-button{
+	color: rgb(242, 247, 247);
+	font-size:1.2rem;
+	font-weight: 200;
 }
 
 
