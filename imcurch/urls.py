@@ -22,6 +22,7 @@ urlpatterns = [
     path('iMKING/', mainpage ),
     path('login/', login_page),
     path('registered/', registeredpage),
+    path(r'djga/', include('google_analytics.urls')),
     path('social-auth/', include('social_django.urls', namespace="social")),
 ]
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
