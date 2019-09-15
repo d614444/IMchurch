@@ -4,7 +4,7 @@
 	<title>I'm King</title>
 	<meta charset="utf-8">
 	{% load staticfiles %}
-	
+	{% load google_analytics_tags %}
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	<script type = "text/javascript" src ="{% static "script/jQuery3.3.1.js" %}"></script>
 	<script type = "text/javascript" src ="{% static "script/bootstrap.js" %}"></script>
@@ -15,6 +15,16 @@
 	<link href="{% static 'script/bootstrap.css' %}" rel="stylesheet">
 	<link href="{% sass_src 'scss/church.scss' %}" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="{% static "images/main-07.png" %}" type="image/png">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF5KHP7LJS"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'G-VF5KHP7LJS');
+	</script>
+
 </head>
 <body>
 
@@ -118,6 +128,9 @@
 
 
 	</style>
+	<div style="display:none">
+    	<img src="{% google_analytics %}" width="0" height="0" />
+	</div>
 	<nav id="navbar" class="navbar navbar-expand fixed-top  navbar-light ">
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav" id="find-tag">
